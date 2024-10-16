@@ -42,7 +42,7 @@ def add_products(cursor):
         cursor.execute('''
         INSERT INTO products,
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        title(varcar(250)), 
+        title(varchar(250)), 
         category_code (varchar(2)),
         unit_price(FLOAT), 
         stock_quantity (INTEGER), 
@@ -97,10 +97,10 @@ def main():
 
         cursor = conn.cursor()
         add_products(cursor, "chocolate", "FD", 10.5, 129, 1)
-        add_products(cursor, "Jeans", "CL", 67,55 ,2 )
+        add_products(cursor, "Jeans", "CL", 67,55,2 )
         add_products(cursor, "mango", "FD", 50, 13,2 )
-        add_products(cursor, "orange", "CL",40, 89 ,1)
-        add_products(cursor, "strawberry","FD", 90, 76,1)
+        add_products(cursor, "orange", "CL",40, 89,1)
+        add_products(cursor, "strawberry", "FD", 90, 76,1)
         add_products(cursor, "pineapple", "FD",185, 100,3)
         add_products(cursor, "dragon fruit", "FD",250, 30,3)
         add_products(cursor, "plum", "CL", 160, 90,3)
@@ -108,7 +108,7 @@ def main():
         add_products(cursor, "watermelon", "FD",78, 60,2)
         add_products(cursor, "grapes", "FD",70, 80,1)
         add_products(cursor, "lemon", "FD",50, 100,1)
-        add_products(cursor, "kiwi","CL", 89, 78,1)
+        add_products(cursor, "kiwi", "CL", 89, 78,1)
         add_products(cursor, "pear", "FD",45, 67,1)
         add_products(cursor, "apricot", "CL",30, 37,3)
 
